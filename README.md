@@ -3,7 +3,7 @@
 Drought-related vegetation stress across the Sokoto Basin, Northwestern Nigeria,
 modelled from climate drivers on a 5 km grid and explained with SHAP.
 
-**▶ [Open the interactive map](https://nellchris.github.io/dryland-vegetation-geoai/)**
+**▶ [Open the interactive map](https://nellchris.github.io/dryland-vegetation-geoai/)**  ·  **[Read the technical report](technical_report.md)**
 
 The map carries nine layers — observed and predicted vegetation anomalies, model
 agreement, dominant climate driver, driver influence strength, land cover and
@@ -89,6 +89,7 @@ data.js           per-cell model output, SHAP attribution and boundary
 scripts/          analysis pipeline, steps 0–8
 figures/          cross-validation design, SHAP and residual diagnostics
 results/          metrics, SHAP importances, consensus and residual tables
+technical_report.md   full write-up: method, results, discussion, references
 ```
 
 Raw satellite and reanalysis extracts (~1 GB) are not tracked; `scripts/`
