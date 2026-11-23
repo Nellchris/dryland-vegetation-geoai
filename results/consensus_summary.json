@@ -1,0 +1,92 @@
+{
+  "target": "ndvi_anomaly_trclim",
+  "n_cells": 5191,
+  "monthly_rows": 248634,
+  "monthly_corr_rf_mlp": 0.6475540116080388,
+  "cell_corr_rf_mlp": 0.836999935284226,
+  "categories": {
+    "Both agree stressed": 4034,
+    "Both agree healthy": 573,
+    "Models disagree": 584
+  },
+  "categories_pct": {
+    "Both agree stressed": 77.71142361780004,
+    "Both agree healthy": 11.038335580812946,
+    "Models disagree": 11.250240801387015
+  },
+  "deadband_eps": 0.0021803533669108323,
+  "categories_deadband": {
+    "Models disagree": 3331,
+    "Both agree stressed": 1839,
+    "Both agree healthy": 21
+  },
+  "disagreement_mean": 0.0012752602328406713,
+  "disagreement_max": 0.006704339740736936,
+  "skill": [
+    {
+      "model": "RF",
+      "pearson_r": 0.28735349999123055,
+      "r2": -0.0463342566487579,
+      "rmse": 0.03263647579786457,
+      "pred_sd": 0.001879766894063134,
+      "sd_vs_obs_pct": 5.8910692412915004
+    },
+    {
+      "model": "MLP",
+      "pearson_r": 0.19627674007379178,
+      "r2": -0.06722326042772986,
+      "rmse": 0.03296064296961802,
+      "pred_sd": 0.0024432563222944736,
+      "sd_vs_obs_pct": 7.65700907613524
+    },
+    {
+      "model": "Consensus",
+      "pearson_r": 0.24593665788376556,
+      "r2": -0.05617225242056678,
+      "rmse": 0.032789546537849046,
+      "pred_sd": 0.0020731191058393807,
+      "sd_vs_obs_pct": 6.49702270878164
+    }
+  ],
+  "corr_disagreement_vs_error": 0.037697688571299695,
+  "observed_sd": 0.03190875572956315,
+  "biascorr": {
+    "rf_centre": -0.0017798489610406148,
+    "mlp_centre": -0.0025893042375955693,
+    "observed_mean": 0.007057516682708092,
+    "categories": {
+      "Both agree stressed": 2084,
+      "Both agree healthy": 2147,
+      "Models disagree": 960
+    },
+    "categories_pct": {
+      "Both agree stressed": 40.146407243305724,
+      "Both agree healthy": 41.360046233866306,
+      "Models disagree": 18.493546522827973
+    },
+    "base_rate_below_mean": 0.4814101329223656,
+    "validation": [
+      {
+        "category": "Both agree stressed",
+        "cells": 2084,
+        "mean_observed_rel": -0.007906199047931991,
+        "pct_obs_below_mean": 60.700575815738965,
+        "lift_vs_base": 1.260891112683077
+      },
+      {
+        "category": "Both agree healthy",
+        "cells": 2147,
+        "mean_observed_rel": 0.008088066431657184,
+        "pct_obs_below_mean": 35.11877037727061,
+        "lift_vs_base": 0.729497947292564
+      },
+      {
+        "category": "Models disagree",
+        "cells": 960,
+        "mean_observed_rel": -0.000925583138414276,
+        "pct_obs_below_mean": 50.0,
+        "lift_vs_base": 1.0386154461784713
+      }
+    ]
+  }
+}

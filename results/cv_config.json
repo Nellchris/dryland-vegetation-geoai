@@ -1,0 +1,95 @@
+{
+  "target": "ndvi_anomaly_trclim",
+  "features": [
+    "precip_mm_an",
+    "precip_mm_an_l1",
+    "precip_mm_an_l2",
+    "precip_mm_an_a3",
+    "temp_c_an",
+    "temp_c_an_l1",
+    "temp_c_an_l2",
+    "temp_c_an_a3",
+    "soil_moisture_an",
+    "soil_moisture_an_l1",
+    "soil_moisture_an_l2",
+    "soil_moisture_an_a3",
+    "et_pet_ratio_an",
+    "et_pet_ratio_an_l1",
+    "et_pet_ratio_an_l2",
+    "et_pet_ratio_an_a3",
+    "landcover_class",
+    "cropland_fraction",
+    "month_sin",
+    "month_cos",
+    "lat",
+    "lon"
+  ],
+  "climate_features": [
+    "precip_mm_an",
+    "precip_mm_an_l1",
+    "precip_mm_an_l2",
+    "precip_mm_an_a3",
+    "temp_c_an",
+    "temp_c_an_l1",
+    "temp_c_an_l2",
+    "temp_c_an_a3",
+    "soil_moisture_an",
+    "soil_moisture_an_l1",
+    "soil_moisture_an_l2",
+    "soil_moisture_an_a3",
+    "et_pet_ratio_an",
+    "et_pet_ratio_an_l1",
+    "et_pet_ratio_an_l2",
+    "et_pet_ratio_an_a3"
+  ],
+  "static_features": [
+    "landcover_class",
+    "cropland_fraction",
+    "month_sin",
+    "month_cos",
+    "lat",
+    "lon"
+  ],
+  "drivers": [
+    "precip_mm",
+    "temp_c",
+    "soil_moisture",
+    "et_pet_ratio"
+  ],
+  "driver_clim_years": [
+    2001,
+    2019
+  ],
+  "target_clim_years": [
+    2001,
+    2019
+  ],
+  "rf_max_depth": 10,
+  "pet_clip_mm": 673.887399993814,
+  "n_rows": 1419806,
+  "n_cells": 5191,
+  "n_folds": 5,
+  "block_km": 25.0,
+  "holdout_years": [
+    2020,
+    2021,
+    2022,
+    2023
+  ],
+  "seed": 42,
+  "block_deg_lat": 0.226093,
+  "block_deg_lon": 0.229847,
+  "n_blocks": 242,
+  "train_rows": 1171172,
+  "holdout_rows": 248634,
+  "adjacent_same_fold_pairs": 0,
+  "fold_cells": {
+    "0": 1072,
+    "1": 1065,
+    "2": 1003,
+    "3": 971,
+    "4": 1080
+  },
+  "target_note": "Anomaly vs per-cell per-calendar-month climatology computed on the TRAIN period 2001-2019 only. The spec 2001-2023 baseline was rejected: it places the holdout inside its own baseline, making train and holdout cell-mean anomalies near-exact negatives (r=-0.998, sd ratio 4.77 vs algebraic 19/4), which inverts the sign of any learned per-cell offset.",
+  "target_rejected": "ndvi_anomaly"
+}

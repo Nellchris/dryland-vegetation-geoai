@@ -1,0 +1,11 @@
+{
+  "base_value": -0.0028767636936390777,
+  "n": 2000,
+  "background_k": 100,
+  "additivity_max_err": 3.213062882423401e-08,
+  "top3": [
+    "month_sin",
+    "month_cos",
+    "temp_c_an"
+  ]
+}

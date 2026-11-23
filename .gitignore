@@ -1,0 +1,30 @@
+# Raw satellite / reanalysis extracts and large derived matrices are not tracked.
+# scripts/ regenerates every derived file from them.
+modis_*.csv
+chirps_*.csv
+era5_*.csv
+grid_static_features.csv
+feature_matrix.csv
+feature_matrix.parquet
+model_matrix.parquet
+*_predictions_holdout.parquet
+*_oof_train.parquet
+residuals_monthly.parquet
+shap_rf.parquet
+shap_mlp.parquet
+*.joblib
+*.pt
+*_partial.csv
+*_partial.npy
+_shap_*_chunks/
+archive_fullclim_target/
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.log
+
+# OS
+.DS_Store
+Thumbs.db

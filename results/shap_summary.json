@@ -1,0 +1,248 @@
+{
+  "rf": {
+    "base_value": 2.434405105539849e-05,
+    "n": 51910,
+    "per_cell": 10,
+    "cells": 5191,
+    "additivity_max_err": 8.98586760555986e-16,
+    "top3": [
+      "precip_mm_an_a3",
+      "precip_mm_an_l1",
+      "soil_moisture_an_a3"
+    ]
+  },
+  "mlp": {
+    "base_value": -0.0028767636936390777,
+    "n": 2000,
+    "background_k": 100,
+    "additivity_max_err": 3.213062882423401e-08,
+    "top3": [
+      "month_sin",
+      "month_cos",
+      "temp_c_an"
+    ]
+  },
+  "spearman_rank_corr": 0.3709768492377189,
+  "comparison": [
+    {
+      "feature": "precip_mm_an_a3",
+      "rf_abs": 0.0029616592351709,
+      "rf_pct": 18.33833992168785,
+      "mlp_abs": 0.0014689867822319,
+      "mlp_pct": 7.247779000519262,
+      "rf_rank": 1,
+      "mlp_rank": 5,
+      "rank_diff": 4
+    },
+    {
+      "feature": "precip_mm_an_l1",
+      "rf_abs": 0.0017247073508139,
+      "rf_pct": 10.679239964227214,
+      "mlp_abs": 0.001072958176106,
+      "mlp_pct": 5.293828257189023,
+      "rf_rank": 2,
+      "mlp_rank": 8,
+      "rank_diff": 6
+    },
+    {
+      "feature": "soil_moisture_an_a3",
+      "rf_abs": 0.0015382262920701,
+      "rf_pct": 9.524565245546166,
+      "mlp_abs": 0.0007179935429965,
+      "mlp_pct": 3.5424815160909517,
+      "rf_rank": 3,
+      "mlp_rank": 15,
+      "rank_diff": 12
+    },
+    {
+      "feature": "et_pet_ratio_an",
+      "rf_abs": 0.0012768179961437,
+      "rf_pct": 7.905947501776252,
+      "mlp_abs": 0.0007905619061341,
+      "mlp_pct": 3.900523851674041,
+      "rf_rank": 4,
+      "mlp_rank": 13,
+      "rank_diff": 9
+    },
+    {
+      "feature": "et_pet_ratio_an_a3",
+      "rf_abs": 0.0008602882402352,
+      "rf_pct": 5.326830984711301,
+      "mlp_abs": 0.0007455242660889,
+      "mlp_pct": 3.678314322152758,
+      "rf_rank": 5,
+      "mlp_rank": 14,
+      "rank_diff": 9
+    },
+    {
+      "feature": "temp_c_an_a3",
+      "rf_abs": 0.0007897305921122,
+      "rf_pct": 4.889944080239129,
+      "mlp_abs": 0.0008823305313986,
+      "mlp_pct": 4.353297643203746,
+      "rf_rank": 6,
+      "mlp_rank": 12,
+      "rank_diff": 6
+    },
+    {
+      "feature": "temp_c_an",
+      "rf_abs": 0.0007691431838187,
+      "rf_pct": 4.762468614152985,
+      "mlp_abs": 0.0015190795145384,
+      "mlp_pct": 7.49492966087988,
+      "rf_rank": 7,
+      "mlp_rank": 3,
+      "rank_diff": 4
+    },
+    {
+      "feature": "temp_c_an_l1",
+      "rf_abs": 0.0007637471417038,
+      "rf_pct": 4.729056784270826,
+      "mlp_abs": 0.0011001418153039,
+      "mlp_pct": 5.427948598991537,
+      "rf_rank": 8,
+      "mlp_rank": 7,
+      "rank_diff": 1
+    },
+    {
+      "feature": "precip_mm_an",
+      "rf_abs": 0.0007396688800818,
+      "rf_pct": 4.579966253832884,
+      "mlp_abs": 0.0004274657084071,
+      "mlp_pct": 2.1090570877216552,
+      "rf_rank": 9,
+      "mlp_rank": 19,
+      "rank_diff": 10
+    },
+    {
+      "feature": "precip_mm_an_l2",
+      "rf_abs": 0.0006843671372995,
+      "rf_pct": 4.237542606520173,
+      "mlp_abs": 0.0004648929805065,
+      "mlp_pct": 2.293718107173624,
+      "rf_rank": 10,
+      "mlp_rank": 17,
+      "rank_diff": 7
+    },
+    {
+      "feature": "soil_moisture_an_l1",
+      "rf_abs": 0.0005671741643599,
+      "rf_pct": 3.511893771341032,
+      "mlp_abs": 0.0011392663418336,
+      "mlp_pct": 5.6209836386646455,
+      "rf_rank": 11,
+      "mlp_rank": 6,
+      "rank_diff": 5
+    },
+    {
+      "feature": "month_cos",
+      "rf_abs": 0.0005651238539606,
+      "rf_pct": 3.4991984252323567,
+      "mlp_abs": 0.0015741737795074,
+      "mlp_pct": 7.766757196376646,
+      "rf_rank": 12,
+      "mlp_rank": 2,
+      "rank_diff": 10
+    },
+    {
+      "feature": "soil_moisture_an",
+      "rf_abs": 0.000533652057119,
+      "rf_pct": 3.304327758960332,
+      "mlp_abs": 0.0014756522988896,
+      "mlp_pct": 7.280665744119273,
+      "rf_rank": 13,
+      "mlp_rank": 4,
+      "rank_diff": 9
+    },
+    {
+      "feature": "et_pet_ratio_an_l1",
+      "rf_abs": 0.0004281554272179,
+      "rf_pct": 2.651101676518419,
+      "mlp_abs": 0.0005718322679187,
+      "mlp_pct": 2.821341861867497,
+      "rf_rank": 14,
+      "mlp_rank": 16,
+      "rank_diff": 2
+    },
+    {
+      "feature": "month_sin",
+      "rf_abs": 0.0004192324765989,
+      "rf_pct": 2.5958515317304136,
+      "mlp_abs": 0.0024864718462896,
+      "mlp_pct": 12.267910542761324,
+      "rf_rank": 15,
+      "mlp_rank": 1,
+      "rank_diff": 14
+    },
+    {
+      "feature": "et_pet_ratio_an_l2",
+      "rf_abs": 0.0003861727808488,
+      "rf_pct": 2.391148731633481,
+      "mlp_abs": 0.0009299802609285,
+      "mlp_pct": 4.588394863440551,
+      "rf_rank": 16,
+      "mlp_rank": 9,
+      "rank_diff": 7
+    },
+    {
+      "feature": "lat",
+      "rf_abs": 0.0003533559097847,
+      "rf_pct": 2.1879494811620006,
+      "mlp_abs": 0.0009291552486402,
+      "mlp_pct": 4.584324366135706,
+      "rf_rank": 17,
+      "mlp_rank": 10,
+      "rank_diff": 7
+    },
+    {
+      "feature": "temp_c_an_l2",
+      "rf_abs": 0.0003140847247963,
+      "rf_pct": 1.944785672546522,
+      "mlp_abs": 0.0009190259552263,
+      "mlp_pct": 4.534347823811866,
+      "rf_rank": 18,
+      "mlp_rank": 11,
+      "rank_diff": 7
+    },
+    {
+      "feature": "lon",
+      "rf_abs": 0.0002038212124315,
+      "rf_pct": 1.2620434628106107,
+      "mlp_abs": 0.0004602872069933,
+      "mlp_pct": 2.2709938533179423,
+      "rf_rank": 19,
+      "mlp_rank": 18,
+      "rank_diff": 1
+    },
+    {
+      "feature": "soil_moisture_an_l2",
+      "rf_abs": 0.0002022426127422,
+      "rf_pct": 1.2522689089527228,
+      "mlp_abs": 0.0004057266884089,
+      "mlp_pct": 2.0017997491665627,
+      "rf_rank": 20,
+      "mlp_rank": 20,
+      "rank_diff": 0
+    },
+    {
+      "feature": "cropland_fraction",
+      "rf_abs": 4.3255678288496033e-05,
+      "rf_pct": 0.2678354493243495,
+      "mlp_abs": 9.47165987539674e-05,
+      "mlp_pct": 0.4673186877873592,
+      "rf_rank": 21,
+      "mlp_rank": 21,
+      "rank_diff": 0
+    },
+    {
+      "feature": "landcover_class",
+      "rf_abs": 2.5467596500499943e-05,
+      "rf_pct": 0.1576931728229709,
+      "mlp_abs": 9.18719591960666e-05,
+      "mlp_pct": 0.4532836269541541,
+      "rf_rank": 22,
+      "mlp_rank": 22,
+      "rank_diff": 0
+    }
+  ]
+}

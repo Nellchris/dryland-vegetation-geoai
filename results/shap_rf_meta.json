@@ -1,0 +1,12 @@
+{
+  "base_value": 2.434405105539849e-05,
+  "n": 51910,
+  "per_cell": 10,
+  "cells": 5191,
+  "additivity_max_err": 8.98586760555986e-16,
+  "top3": [
+    "precip_mm_an_a3",
+    "precip_mm_an_l1",
+    "soil_moisture_an_a3"
+  ]
+}

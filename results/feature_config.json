@@ -1,0 +1,71 @@
+{
+  "target": "ndvi_anomaly",
+  "features": [
+    "precip_mm_an",
+    "precip_mm_an_l1",
+    "precip_mm_an_l2",
+    "precip_mm_an_a3",
+    "temp_c_an",
+    "temp_c_an_l1",
+    "temp_c_an_l2",
+    "temp_c_an_a3",
+    "soil_moisture_an",
+    "soil_moisture_an_l1",
+    "soil_moisture_an_l2",
+    "soil_moisture_an_a3",
+    "et_pet_ratio_an",
+    "et_pet_ratio_an_l1",
+    "et_pet_ratio_an_l2",
+    "et_pet_ratio_an_a3",
+    "landcover_class",
+    "cropland_fraction",
+    "month_sin",
+    "month_cos",
+    "lat",
+    "lon"
+  ],
+  "climate_features": [
+    "precip_mm_an",
+    "precip_mm_an_l1",
+    "precip_mm_an_l2",
+    "precip_mm_an_a3",
+    "temp_c_an",
+    "temp_c_an_l1",
+    "temp_c_an_l2",
+    "temp_c_an_a3",
+    "soil_moisture_an",
+    "soil_moisture_an_l1",
+    "soil_moisture_an_l2",
+    "soil_moisture_an_a3",
+    "et_pet_ratio_an",
+    "et_pet_ratio_an_l1",
+    "et_pet_ratio_an_l2",
+    "et_pet_ratio_an_a3"
+  ],
+  "static_features": [
+    "landcover_class",
+    "cropland_fraction",
+    "month_sin",
+    "month_cos",
+    "lat",
+    "lon"
+  ],
+  "drivers": [
+    "precip_mm",
+    "temp_c",
+    "soil_moisture",
+    "et_pet_ratio"
+  ],
+  "driver_clim_years": [
+    2001,
+    2019
+  ],
+  "target_clim_years": [
+    2001,
+    2023
+  ],
+  "rf_max_depth": 10,
+  "pet_clip_mm": 673.887399993814,
+  "n_rows": 1419806,
+  "n_cells": 5191
+}
