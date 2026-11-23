@@ -287,8 +287,10 @@ recover the *pattern* of stress but not its *amplitude*.
 | Cropland fraction | 0.000043 | 0.27% |
 | Land cover class | 0.000025 | 0.16% |
 
-Rainfall terms account for 38.1% of total attribution; all moisture-related terms
-together reach 64.5%. The beeswarm confirms physically correct directionality
+Rainfall terms account for 37.8% of total attribution; adding soil moisture
+brings the total to 55.4%, and including evaporative stress reaches 73.7%.
+Temperature contributes 16.3% and time of year 6.1%. The beeswarm confirms
+physically correct directionality
 throughout: low accumulated rainfall anomaly drives strongly negative SHAP, high
 soil moisture positive, high temperature anomalies negative.
 
